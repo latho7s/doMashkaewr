@@ -1,0 +1,38 @@
+@startuml
+!define RECTANGLE class
+package "Commits" {
+    RECTANGLE "Initial commit" as 763ab86{
+        + 763ab86414f001d11383f969e2ac1622ae630d8a
+        + 
+        + 
+    }
+    RECTANGLE "commit1" as 15bb8d5{
+        + 15bb8d5eb138d2a03e08f065da959ea1319de79f
+        + test.txt
+        + test.txt (C)
+    }
+    763ab86 --> 15bb8d5
+    RECTANGLE "commit2" as 5324bbd{
+        + 5324bbde5207691ca36861ca78a2a206e1ccaab2
+        + test2.txt
+        + test2.txt (C)
+    }
+    15bb8d5 --> 5324bbd
+    RECTANGLE "commit3" as cf9886d{
+        + cf9886d615d0801e99f1c27c77e7db0c77c0bb67
+        + qwe.txt
+        + test.txt
+        + qwe.txt (C)
+        + test.txt (R)
+    }
+    5324bbd --> cf9886d
+    RECTANGLE "commit4" as 2299184{
+        + 2299184ef2b5c9fdf63c4c14af5c48e8ca083bb4
+        + qwe.txt
+        + test2.txt
+        + qwe.txt (R)
+        + test2.txt (D)
+    }
+    cf9886d --> 2299184
+}
+@enduml
