@@ -1,0 +1,8 @@
+ls
+pwd
+cd home
+pwd
+tac hhello.txt
+cat hello.txt 
+du home
+exit
