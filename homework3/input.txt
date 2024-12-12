@@ -1,0 +1,4 @@
+{{!-- Это многострочный комментарий --}}
+def myConst = 42
+def myString = @"This is string"
+myArray = [ 1; 2; 3; $(myConst); $(myString) ]
